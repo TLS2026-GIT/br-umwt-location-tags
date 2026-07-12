@@ -27,6 +27,7 @@
     --ink:#1B1E21;
     --hazard:#2B2E82;
     --hazard-dark:#1D1F5C;
+    --hazard-light:#8B90F0;
     --steel:#7B8894;
     --steel-light:#AAB4BD;
     --line:#3A3F44;
@@ -50,10 +51,10 @@
     display:flex;align-items:center;gap:8px;
     font-family:'IBM Plex Mono',monospace;
     font-size:12px;letter-spacing:0.14em;text-transform:uppercase;
-    color:var(--hazard);margin-bottom:6px;
+    color:var(--hazard-light);margin-bottom:6px;
   }
   .eyebrow::before{
-    content:"";width:10px;height:10px;background:var(--hazard);
+    content:"";width:10px;height:10px;background:var(--hazard-light);
     display:inline-block;transform:rotate(45deg);
   }
   h1{
@@ -86,7 +87,7 @@
     outline:none;
     transition:border-color .15s;
   }
-  .search-row input:focus{border-color:var(--hazard);}
+  .search-row input:focus{border-color:var(--hazard-light);}
   .search-row input::placeholder{color:var(--steel);font-weight:400;letter-spacing:0;}
   .search-row svg{position:absolute;right:14px;top:50%;transform:translateY(-50%);pointer-events:none;}
 
@@ -98,7 +99,7 @@
   }
   .sync-row .hint{margin-top:0;flex:1;}
   .sync-row .hint.ok{color:#5FA97A;}
-  .sync-row .hint.warn{color:var(--hazard);}
+  .sync-row .hint.warn{color:var(--hazard-light);}
   .sync-row .hint.err{color:#D9695F;}
   .sync-refresh{
     flex:none;
@@ -247,7 +248,7 @@
   .install-banner{
     margin-top:16px;
     background:var(--asphalt-2);
-    border:1px solid var(--hazard-dark);
+    border:1px solid var(--hazard-light);
     border-radius:10px;
     padding:14px 16px;
     display:flex;align-items:center;justify-content:space-between;gap:12px;
